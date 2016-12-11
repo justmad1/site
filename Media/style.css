@@ -1,0 +1,314 @@
+@charset "utf-8";
+
+*{
+	margin: 0%;
+	padding: 0%;
+	outline: none;
+}
+
+body{
+	width: 100%;
+	height: 100%;
+	background: url(Images/wp.jpg);
+	font-family: "Segoe UI", arial, 
+	sans-serif;
+	font-size: 1em;
+	line-height: 135%;
+	float: left;
+}
+
+a{
+	color: black;
+	text-decoration: none;
+}
+
+a:hover{
+	color: blue;
+}
+
+ .clear{
+ 	clear: both;
+ }
+
+img{
+	max-width: 100%;
+	max-height: auto;
+	width: auto;
+}
+
+
+ /* Стили для шапки */
+header{
+	width: 98%;
+	float: left;  
+	padding: 1%;
+	background-color: #eee;
+}
+
+header div{
+	margin-top: 8px;
+}
+
+#logo{
+	color: #2F4F4F;
+	font-size: 50px;
+	font-weight: 600;
+	margin-right: 100px;
+}
+
+#logo span{
+	font-size: 65px;
+	color: #4682B4;
+}
+
+#reg{
+	color: #4682B4;
+	font-weight: 600;
+	padding: 0.5%;
+	background-color: #bebebe;
+	border-radius: 10px;
+	margin-right: 30px;
+	float: right;
+}
+
+#reg, #log{
+	transition: all.6s ease;
+}
+
+#reg:hover{
+	background-color: #2F4F4F;
+	
+}
+
+#log:hover{
+	background-color: #4682B4;
+	
+}
+
+#log{
+	color: #2F4F4F;
+	font-weight: 600;
+	padding: 0.5%;
+	padding-right: 33px;
+	padding-left: 33px;
+	background-color: #bebebe;
+	border-radius: 10px;
+	margin-right: 25px;
+	float: right;
+}
+
+header div a img{
+	margin-left: 10px;
+	width: 40px;
+	height: 40px;
+}
+
+
+/* Стили для меню*/
+#menu{
+	display: flex;
+	width: 100%;
+	height: 40px;
+	margin-bottom: 1%;
+} 
+
+#menu a{
+	width: 24.52%;
+	padding: 0.8% 0%;
+	text-align: center;
+	background-color: #bebebe;
+	border-left-style: solid;
+	border-right-style: solid;
+	border-color: #888;
+	color: #4682B4;
+	font-size: 1.5em;
+	
+	transition: all.6s ease;
+}
+
+#menu a:hover{
+	background-color: #eee;
+	color: #2F4F4F;	
+}
+
+
+/* Стили для wrapper */ 
+#wrapper{
+	float: left;
+	width: 90%;
+	height: 100%;
+	margin-left: 7%;
+	margin-right: 3%;	
+}
+
+
+/* Стили для левой колонки */
+#wrapper #leftCol{
+	width: 75%;
+	height: 100%;
+	float: left;
+}
+
+#mainArticle{
+	width: 87%;
+	height: 100%;
+	background-color: #e5e5e5;
+	padding: 1%;
+	float: left;
+	margin-left: 5%;
+	border: 2px solid #777;
+	border-bottom: 5px solid #777;
+	transition: all.4s ease;
+	overflow: hidden;
+}
+
+#mainArticle:hover{
+	border-color: #4682B4;
+}
+
+.article{
+	width: 40%;
+	margin-left: 5%;
+	margin-bottom: 3%;
+	background-color: #f6f6f6;
+	padding: 1%;
+	float: left;
+	border: 1px solid #777;
+	border-bottom: 3px solid #777;	
+}
+
+.article:hover{
+	border-color: #4682B4;
+}
+
+#mainArticle img{
+	width: 100%;
+	height: 420px;
+	margin-bottom: 10px;
+}
+
+.article img{
+	width: 100%;
+	height: 200px;
+	margin-bottom: 10px;
+}
+
+#mainArticle a:hover, .article a:hover{
+	color: black;
+	text-decoration: underline;
+}
+
+#mainArticle h2, .article h2{
+	font-weight: normal;
+	font-size: 1.4em;
+	color: #636363;
+	font-family: Comic Sans MS, sans-serif;
+}
+
+#mainArticle p, .article p{
+	width: 90%;
+	margin-left: 5%;
+}
+
+/* Стили для правой колонки */
+
+#rightCol{
+	width: 20%;
+	height: 100%;
+	float: left; 
+}
+
+.banner{
+	width: 100%;
+	float: left;
+	margin-bottom: 20px;
+	border: 2px solid silver;
+	background-color: #ddd;
+	transition: all.6s ease;
+}
+
+.banner:hover{
+	border-color: #CD0000;
+}
+
+
+/* Стили для футера */
+footer{
+	float: left;
+	width: 90%;
+	margin-top: 80%;
+	margin-left: 5%;
+	height: 30px;
+	text-align: center;
+	border-top: 1px dotted black;
+	position: relative; top: 100%;
+}
+
+
+/* Стили для обратной связи */
+#feedback{
+	float: left;
+	width: 30%;
+	margin-top: 5%;
+	margin-left: 35%;
+}
+
+#feedback input{
+	margin-bottom: 2%;
+}
+
+#name {
+	padding: 1%;
+	font-size: 1em;
+}
+
+#email {
+	padding: 1%;
+	font-size: 1em;
+}
+
+#subject {
+	padding: 1%;
+	font-size: 1em;
+}
+
+#message{
+	padding: 6%;
+	padding-right: 7%;
+	resize: none;
+	width: 30%;
+	height: 100px;
+	font-size: 1.2em;
+}
+
+#done{
+	float: left;
+	margin-top: 3%;
+	padding: 1%;
+}
+
+#messageShow{
+	font-size: 1.2em;
+	float: left;
+	width: 80%;
+	color: red;
+}
+
+.bl{
+	float: left;
+	width: 150px;
+	margin: 0 15px;
+	background: #fff;
+	padding: 50px 10px;
+}
+
+.mid{
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.number{
+	font-size: 2em;
+	padding: 0 0 25px;
+	font-weight: bold;
+}
